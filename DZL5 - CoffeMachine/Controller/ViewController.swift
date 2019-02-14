@@ -9,21 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    let cofeeMachine = CofeeMachine.init()
+    
+    @IBOutlet weak var resultCoffe: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let cofeeMachine = CofeeMachine.init()
-        print(cofeeMachine.americano())
-        cofeeMachine.waterPlus()
-        print(cofeeMachine.americano())
-        cofeeMachine.beansPlus()
-        print(cofeeMachine.americano())
-        print("second cofe", cofeeMachine.americano())
-        print("3 cofe",cofeeMachine.americano())
-    
     }
 
-
+    @IBAction func buttonAmericano(_ sender: Any) {
+        let americano = cofeeMachine.americano()
+        resultCoffe.text = americano
+        print(americano)
+    }
+    
+    @IBAction func buttonWater(_ sender: Any) {
+        let waterPlus = cofeeMachine.waterPlus()
+        resultCoffe.text = waterPlus
+        print(waterPlus)
+    }
+    
+    @IBAction func buttonBeans(_ sender: Any) {
+        let beansPlus = cofeeMachine.beansPlus()
+        resultCoffe.text = beansPlus
+        print(beansPlus)
+    }
+    
 }
 

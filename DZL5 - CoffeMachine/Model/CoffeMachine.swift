@@ -15,16 +15,19 @@ class CofeeMachine {
     var milk = 0
     var beans = 0
     
-    func waterPlus() {
+    func waterPlus() -> String {
         self.water += 2000
+        return "Water is plus 2000"
     }
     
-    func milkPlusk() {
+    func milkPlusk() -> String {
         self.milk += 1000
+        return "Milk is plus 1000"
     }
     
-    func beansPlus() {
+    func beansPlus() -> String {
         self.beans += 500
+        return "Beans is plus 500"
     }
     
     func americano() -> String {
