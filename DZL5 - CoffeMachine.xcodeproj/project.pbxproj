@@ -12,6 +12,7 @@
 		FAAF960A2215B67A002158AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAF96082215B67A002158AB /* Main.storyboard */; };
 		FAAF960C2215B67C002158AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAAF960B2215B67C002158AB /* Assets.xcassets */; };
 		FAAF960F2215B67C002158AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAAF960D2215B67C002158AB /* LaunchScreen.storyboard */; };
+		FAAF96172215B80B002158AB /* CoffeMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAF96162215B80B002158AB /* CoffeMachine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FAAF960B2215B67C002158AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAAF960E2215B67C002158AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAAF96102215B67C002158AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAF96162215B80B002158AB /* CoffeMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeMachine.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,30 @@
 			isa = PBXGroup;
 			children = (
 				FAAF96042215B67A002158AB /* AppDelegate.swift */,
-				FAAF96062215B67A002158AB /* ViewController.swift */,
+				FAAF96182215B815002158AB /* Model */,
+				FAAF96192215B84A002158AB /* Controller */,
 				FAAF96082215B67A002158AB /* Main.storyboard */,
 				FAAF960B2215B67C002158AB /* Assets.xcassets */,
 				FAAF960D2215B67C002158AB /* LaunchScreen.storyboard */,
 				FAAF96102215B67C002158AB /* Info.plist */,
 			);
 			path = "DZL5 - CoffeMachine";
+			sourceTree = "<group>";
+		};
+		FAAF96182215B815002158AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAAF96162215B80B002158AB /* CoffeMachine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAAF96192215B84A002158AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FAAF96062215B67A002158AB /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAF96172215B80B002158AB /* CoffeMachine.swift in Sources */,
 				FAAF96072215B67A002158AB /* ViewController.swift in Sources */,
 				FAAF96052215B67A002158AB /* AppDelegate.swift in Sources */,
 			);
