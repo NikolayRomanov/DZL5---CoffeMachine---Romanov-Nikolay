@@ -37,5 +37,17 @@ class ViewController: UIViewController {
         print(beansPlus)
     }
     
+    @IBAction func buttonCappuccino(_ sender: Any) {
+        let cappucino = cofeeMachine.cappuccino()
+        resultCoffe.text = cappucino
+        print(cappucino)
+    }
+    
+    @IBAction func buttonAddMilk(_ sender: Any) {
+        let milkPlus = cofeeMachine.milkPlusk()
+        resultCoffe.text = milkPlus
+        print(milkPlus)
+    }
+    
 }
 

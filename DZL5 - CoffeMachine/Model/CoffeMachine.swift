@@ -21,7 +21,7 @@ class CofeeMachine {
     }
     
     func milkPlusk() -> String {
-        self.milk += 1000
+        self.milk += 500
         return "Milk is plus 1000"
     }
     
@@ -44,6 +44,28 @@ class CofeeMachine {
         if (self.beans < 250) {
             let str = "Cofee machine need Beans!"
             return str
+        }
+        return ""
+    }
+    
+    func cappuccino() -> String {
+        let americano = self.americano()
+        if americano == "Cofee machine need Water!" {
+            return americano
+        }
+        if americano == "Cofee machine need Beans!" {
+            return americano
+        }
+        if americano == "Your americano is ready sir!" {
+            if self.milk >= 250 {
+                self.milk -= 250
+                let str = "Your cappuccino is ready sir!"
+                return str
+            }
+            if self.milk < 250 {
+                let str = "Cofee machine need Milk!"
+                return str
+            }
         }
         return ""
     }
